@@ -577,5 +577,63 @@ form input {
         max-width: 90%;
     }
 }
+/* Footer section ==========*/
+footer {
+    background-color: var(--back-color);
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.footer-content {
+    padding: 2rem 3rem;
+    width: 100%;
+    max-width: 106rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.social-icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons-container span {
+    margin-left: 3rem;
+}
+
+.footer-content [class^="holberton_school-icon-"], .footer-content [class*=" holberton_school-icon-"] {
+    font-size: 3rem;
+    color: var(--white-color);
+}
+
+.copyrights {
+    font-size: var(--medium-text-font-size);
+    color: white;
+    opacity: .35;
+}
+
+@media screen and (max-width: 480px) {
+
+    footer .logo {
+        width: 17rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .nav ul li {
+        margin-bottom: 0;
+    }
+
+    .social-icons-container span {
+        margin: 0 2rem;
+    }
+}
